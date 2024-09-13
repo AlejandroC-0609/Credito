@@ -1,19 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="60dp"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-22dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/valorPropiedad"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:hint="5"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aviso2" />
+
+
+        <EditText
+            android:id="@+id/tasaInteresNum"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="14.03"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aviso3" />
+
+        <TextView
+            android:id="@+id/plazoCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/a_qu_plazo_necesitas_el_cr_dito_a_os"
+            android:textColor="#FF0000"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aviso2" />
+
+
+        <TextView
+            android:id="@+id/tasaInteres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/a_qu_tasa_de_inter_s_anual_tae"
+            android:textColor="#FF0000"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aviso3" />
+
+        <EditText
+            android:id="@+id/cuantoNecesitasNum"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="70.000.000"
+            android:inputType="number"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aviso1" />
+
+        <TextView
+            android:id="@+id/aviso2"
+            android:layout_width="288dp"
+            android:layout_height="72dp"
+            android:text="@string/el_pr_stamo_m_nimo_es_de_50_000_000_y_no_puede_exceder_el_70_del_valor_de_la_propiedad_para_cr_ditos_hipotecarios_mientras_que_para_leasing_habitacional_no_puede_exceder_el_80_del_valor_de_la_propiedad"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cuantoNecesitasNum" />
+
+        <TextView
+            android:id="@+id/cuantoNecesitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="* ¿Cuanto Necesitas?"
+            android:textColor="#FF0000"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aviso1" />
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="254dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:lineHeight="28dp"
+            android:text="@string/cr_dito_hipotecario_en_colombia"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textoValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:text="@string/valor_de_la_propiedad"
+            android:textColor="#FF0000"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Titulo" />
+
+        <TextView
+            android:id="@+id/aviso1"
+            android:layout_width="285dp"
+            android:layout_height="33dp"
+            android:text="El valor de la propiedad no puede ser inferior a $70.000.000"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valorPropiedadNum" />
+
+        <EditText
+            android:id="@+id/valorPropiedadNum"
+            android:layout_width="317dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="88dp"
+            android:ems="10"
+            android:hint="100.000.000"
+            android:inputType="number"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+        <TextView
+            android:id="@+id/aviso3"
+            android:layout_width="294dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/van_desde_los_5_hasta_los_20_a_os_el_plazo_mas_com_n_es_de_20_a_os"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valorPropiedad" />
+
+        <TextView
+            android:id="@+id/aviso4"
+            android:layout_width="294dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/esta_tasa_depende_de_tu_historial_crediticio_y_del_banco_en_el_que_pides_el_cr_dito"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tasaInteresNum" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="316dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/simular"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aviso4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="#"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

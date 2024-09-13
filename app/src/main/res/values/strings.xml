@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CreditoMyA</string>
+    <string name="cr_dito_hipotecario_en_colombia">Crédito Hipotecario en Colombia</string>
+    <string name="valor_de_la_propiedad">* Valor de la propiedad</string>
+    <string name="el_pr_stamo_m_nimo_es_de_50_000_000_y_no_puede_exceder_el_70_del_valor_de_la_propiedad_para_cr_ditos_hipotecarios_mientras_que_para_leasing_habitacional_no_puede_exceder_el_80_del_valor_de_la_propiedad">El préstamo mínimo es de $50.000.000 y no puede exceder el 70% del valor de la propiedad para créditos hipotecarios, mientras que para leasing habitacional no puede exceder el 80% del valor de la propiedad.</string>
+    <string name="a_qu_plazo_necesitas_el_cr_dito_a_os">* ¿A qué plazo necesitas el crédito (años)?</string>
+    <string name="Simuladores" />
+    <string name="van_desde_los_5_hasta_los_20_a_os_el_plazo_mas_com_n_es_de_20_a_os">Van desde los 5 hasta los 20 años. El plazo mas común es de 20 años.</string>
+    <string name="a_qu_tasa_de_inter_s_anual_tae">* ¿A qué tasa de interés anual (TAE)?</string>
+    <string name="simular">Simular</string>
+    <string name="esta_tasa_depende_de_tu_historial_crediticio_y_del_banco_en_el_que_pides_el_cr_dito">Esta tasa depende de tu historial crediticio y del banco en el que pides el crédito.</string>
 </resources>
