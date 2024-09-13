@@ -17,7 +17,7 @@
         tools:layout_editor_absoluteY="-22dp">
 
         <EditText
-            android:id="@+id/valorPropiedad"
+            android:id="@+id/plazoCreditoNum"
             android:layout_width="317dp"
             android:layout_height="46dp"
             android:layout_marginTop="52dp"
@@ -166,7 +166,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/valorPropiedad" />
+            app:layout_constraintTop_toBottomOf="@+id/plazoCreditoNum" />
 
         <TextView
             android:id="@+id/aviso4"
@@ -181,7 +181,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tasaInteresNum" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/simularbtn"
             android:layout_width="316dp"
             android:layout_height="48dp"
             android:layout_marginTop="44dp"
@@ -192,15 +192,15 @@
             app:layout_constraintTop_toBottomOf="@+id/aviso4" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/resultadotxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:text="#"
+            android:text=""
             android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/simularbtn"
             tools:visibility="visible" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
